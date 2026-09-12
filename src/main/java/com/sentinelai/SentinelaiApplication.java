@@ -1,0 +1,13 @@
+package com.sentinelai;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SentinelaiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SentinelaiApplication.class, args);
+	}
+
+}
