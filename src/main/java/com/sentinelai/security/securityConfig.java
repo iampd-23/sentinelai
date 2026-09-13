@@ -22,7 +22,8 @@ public class securityConfig {
                         .requestMatchers(
                                 "/actuator/health",
                                 "/api/v1/services/**",
-                                "/api/v1/telemetry/**"
+                                "/api/v1/telemetry/**",
+                                "/api/v1/incidents/**"
                         ).permitAll()
                         .anyRequest().authenticated()
                 );
