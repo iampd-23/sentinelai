@@ -21,7 +21,8 @@ public class securityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
                                 "/actuator/health",
-                                "/api/v1/services/**"
+                                "/api/v1/services/**",
+                                "/api/v1/telemetry/**"
                         ).permitAll()
                         .anyRequest().authenticated()
                 );

@@ -11,3 +11,12 @@
 /Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/service/entity/serviceStatus.java
 /Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/service/repository/monitoredServiceRepository.java
 /Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/service/service/monitoredServiceService.java
+/Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/telemetry/consumer/logTelemetryConsumer.java
+/Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/telemetry/controller/logTelemetryController.java
+/Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/telemetry/dto/logTelemetryRequest.java
+/Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/telemetry/entity/logTelemetry.java
+/Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/telemetry/event/logTelemetryEvent.java
+/Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/telemetry/producer/logTelemetryProducer.java
+/Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/telemetry/repository/logTelemetryRepository.java
+/Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/telemetry/service/logTelemetryEventProcessor.java
+/Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/telemetry/service/logTelemetryService.java

@@ -39,6 +39,13 @@ services:
       timeout: 5s
       retries: 10
 
+  kafka:
+    image: apache/kafka:4.3.1
+    container_name: sentinelai-kafka
+
+    ports:
+      - "9092:9092"
+
 volumes:
   sentinelai-postgres-data:
   sentinelai-redis-data:
