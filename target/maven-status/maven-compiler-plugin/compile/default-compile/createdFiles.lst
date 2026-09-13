@@ -1,3 +1,13 @@
-com/sentinelai/service/entity/monitoredService.class
 com/sentinelai/service/entity/serviceStatus.class
+com/sentinelai/security/securityConfig.class
+com/sentinelai/common/exception/errorResponse.class
+com/sentinelai/common/exception/serviceAlreadyExistsException.class
 com/sentinelai/SentinelaiApplication.class
+com/sentinelai/common/exception/globalExceptionHandler.class
+com/sentinelai/service/controller/monitoredServiceController.class
+com/sentinelai/common/exception/serviceNotFoundException.class
+com/sentinelai/service/entity/monitoredService.class
+com/sentinelai/service/service/monitoredServiceService.class
+com/sentinelai/service/repository/monitoredServiceRepository.class
+com/sentinelai/service/dto/monitoredServiceResponse.class
+com/sentinelai/service/dto/monitoredServiceCreateRequest.class

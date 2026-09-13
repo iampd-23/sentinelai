@@ -1,0 +1,44 @@
+services:
+
+  postgres:
+    image: postgres:18-alpine
+    container_name: sentinelai-postgres
+
+    environment:
+      POSTGRES_DB: sentinelai
+      POSTGRES_USER: sentinelai
+      POSTGRES_PASSWORD: sentinelai_dev
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - sentinelai-postgres-data:/var/lib/postgresql
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sentinelai -d sentinelai"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:8-alpine
+    container_name: sentinelai-redis
+
+    ports:
+      - "6379:6379"
+
+    volumes:
+      - sentinelai-redis-data:/data
+
+    command: redis-server --appendonly yes
+
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  sentinelai-postgres-data:
+  sentinelai-redis-data:
