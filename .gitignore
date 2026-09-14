@@ -1,0 +1,29 @@
+# Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+.env.*
+application-local.properties
+application-local.yml
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.swp
