@@ -1,14 +1,17 @@
 # Maven
 target/
+!.mvn/wrapper/maven-wrapper.jar
 
 # IntelliJ IDEA
 .idea/
+*.iws
 *.iml
+*.ipr
 
 # VS Code
 .vscode/
 
-# OS files
+# macOS
 .DS_Store
 
 # Logs
@@ -17,13 +20,9 @@ target/
 # Environment / secrets
 .env
 .env.*
+!.env.example
+
+# Spring Boot
 application-local.properties
 application-local.yml
-
-# macOS
-.AppleDouble
-.LSOverride
-
-# Temporary files
-*.tmp
-*.swp
+application-local.yaml
