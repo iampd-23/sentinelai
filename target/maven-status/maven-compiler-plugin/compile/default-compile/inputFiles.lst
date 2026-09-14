@@ -5,6 +5,9 @@
 /Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/common/exception/invalidIncidentStateException.java
 /Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/common/exception/serviceAlreadyExistsException.java
 /Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/common/exception/serviceNotFoundException.java
+/Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/detection/job/errorSpikeDetectionJob.java
+/Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/detection/service/errorSpikeDetectionService.java
+/Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/detection/service/incidentDetectionService.java
 /Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/incident/controller/incidentController.java
 /Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/incident/dto/incidentCreateRequest.java
 /Users/priyadarshansharma/Documents/Projects/Projects from 12 Sept 2026/Sentinel AI/sentinelai/src/main/java/com/sentinelai/incident/dto/incidentResponse.java

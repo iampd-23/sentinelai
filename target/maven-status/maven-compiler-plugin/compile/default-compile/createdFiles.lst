@@ -8,6 +8,7 @@ com/sentinelai/incident/dto/incidentCreateRequest.class
 com/sentinelai/common/exception/globalExceptionHandler.class
 com/sentinelai/incident/service/incidentService.class
 com/sentinelai/incident/entity/incidentSeverity.class
+com/sentinelai/detection/service/incidentDetectionService.class
 com/sentinelai/incident/repository/incidentRepository.class
 com/sentinelai/common/exception/invalidIncidentStateException.class
 com/sentinelai/incident/dto/incidentResponse.class
@@ -24,7 +25,9 @@ com/sentinelai/service/controller/monitoredServiceController.class
 com/sentinelai/telemetry/service/logTelemetryService.class
 com/sentinelai/common/exception/serviceNotFoundException.class
 com/sentinelai/telemetry/controller/logTelemetryController.class
+com/sentinelai/detection/service/errorSpikeDetectionService.class
 com/sentinelai/incident/entity/incident.class
+com/sentinelai/detection/job/errorSpikeDetectionJob.class
 com/sentinelai/incident/controller/incidentController.class
 com/sentinelai/service/entity/monitoredService.class
 com/sentinelai/service/service/monitoredServiceService.class

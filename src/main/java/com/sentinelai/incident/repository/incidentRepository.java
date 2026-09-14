@@ -32,6 +32,9 @@ public interface incidentRepository extends JpaRepository<incident, UUID> {
     @EntityGraph(attributePaths = "monitoredService")
     List<incident> findByMonitoredServiceIdAndStatus(
             UUID serviceId,
-            incidentStatus status
-    );
+            incidentStatus status);
+
+    boolean existsByMonitoredServiceIdAndStatus(
+            UUID serviceId,
+            incidentStatus status);
 }
