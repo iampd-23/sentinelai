@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import com.sentinelai.detection.dto.errorGroup;
+import com.sentinelai.evidence.service.incidentErrorGroupService;
 
 import java.time.Instant;
 import java.util.List;
@@ -27,14 +28,16 @@ public class incidentDetectionService {
         private final incidentCorrelationService incidentCorrelationService;
         private final incidentEvidenceService incidentEvidenceService;
         private final errorGroupingService errorGroupingService;
+        private final incidentErrorGroupService incidentErrorGroupService;
 
         public incidentDetectionService(
-                        errorSpikeDetectionService errorSpikeDetectionService,
-                        incidentService incidentService,
-                        incidentRepository incidentRepository,
-                        incidentCorrelationService incidentCorrelationService,
-                        incidentEvidenceService incidentEvidenceService,
-                        errorGroupingService errorGroupingService) {
+                errorSpikeDetectionService errorSpikeDetectionService,
+                incidentService incidentService,
+                incidentRepository incidentRepository,
+                incidentCorrelationService incidentCorrelationService,
+                incidentEvidenceService incidentEvidenceService,
+                errorGroupingService errorGroupingService,
+                incidentErrorGroupService incidentErrorGroupService) {
 
                 this.errorSpikeDetectionService = errorSpikeDetectionService;
                 this.incidentService = incidentService;
@@ -42,6 +45,7 @@ public class incidentDetectionService {
                 this.incidentCorrelationService = incidentCorrelationService;
                 this.incidentEvidenceService = incidentEvidenceService;
                 this.errorGroupingService = errorGroupingService;
+                this.incidentErrorGroupService = incidentErrorGroupService;
         }
 
         public void detectForService(
@@ -85,6 +89,9 @@ public class incidentDetectionService {
                                 incident,
                                 relatedLogs);
                 List<errorGroup> errorGroups = errorGroupingService.groupErrors(relatedLogs);
+                incidentErrorGroupService.saveErrorGroups(
+                        incident,
+                        errorGroups);
                 errorGroups.forEach(group -> log.info(
                                 "Error group: message={}, count={}",
                                 group.message(),
