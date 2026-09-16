@@ -18,12 +18,13 @@ public class securityConfig {
             .httpBasic(AbstractHttpConfigurer::disable)
             .formLogin(AbstractHttpConfigurer::disable)
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers(
-                    "/actuator/health",
-                    "/api/v1/services/**",
-                    "/api/v1/telemetry/**",
-                    "/api/v1/incidents/**"
-                ).permitAll()
+                    .requestMatchers(
+                            "/actuator/health",
+                            "/api/v1/services/**",
+                            "/api/v1/telemetry/**",
+                            "/api/v1/incidents/**",
+                            "/api/v1/dependencies/**"
+                    ).permitAll()
                 .anyRequest().authenticated()
             );
 
